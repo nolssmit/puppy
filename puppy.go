@@ -3,6 +3,7 @@ package puppy
 import (
 	"github.com/nolssmit/dog"
 )
+
 func Bark() string {
 	return "Woof!"
 }
@@ -11,10 +12,10 @@ func Barks() string {
 	return "Woof! Woof! Woof!"
 }
 
-func BigBark() {
+func BigBark() string {
 	return dog.WhenGrownUp(Bark())
 }
 
-func BigBarks() {
+func BigBarks() string {
 	return dog.WhenGrownUp(Barks())
 }
